@@ -1,0 +1,169 @@
+/*1. Reseteo*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFF8FD;
+  color: #222;
+  line-height: 1.6;
+}
+
+/*2. Header*/
+
+header {
+  background-color: #0A3D62;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+header nav a {
+  color: #FFC312;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+/*3. Banner*/
+
+.banner {
+  background-color: #0A3D62;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 2px solid #FFC312;
+}
+
+.banner h2 {
+  font-size: 32px;
+  color: white;
+}
+
+/*4. Secciones Generales*/
+
+main section {
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main section:not(.banner) h2 {
+  margin-bottom: 15px;
+  color: #0A3D62;
+}
+
+/*5. Cards*/
+
+.Cards {
+  display: flex;
+  gap: 20px;
+}
+
+.Cards article {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.Cards article h3 {
+  color: #E84118;
+  margin-bottom: 8px;
+}
+
+.Cards article a {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-top: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: #E84118;
+}
+
+/*6. Tabla del menú*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+thead {
+  background-color: #0A3D62;
+  color: white;
+}
+
+/*7. Formulario*/
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  background-color: #E84118;
+  color: white;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/*8. Footer*/
+
+footer {
+  background-color: #0A3D62;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/*9. Celular*/
+
+@media (max-width: 600px) {
+  .Cards {
+    flex-direction: column;
+  }
+  .banner {
+    font-size: 24px;
+  }
+}
